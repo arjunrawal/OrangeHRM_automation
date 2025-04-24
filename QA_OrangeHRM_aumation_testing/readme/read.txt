@@ -1,0 +1,28 @@
+
+
+# OrangeHRM Automation Testing
+
+This project is an automation testing suite for the OrangeHRM application using **Selenium** WebDriver and the **Page Object Model (POM)**. The tests are written in **Python** and utilize the **unittest** framework for organizing and running the tests.
+
+1. Folder Structure
+
+The project is organized into the following directories:
+
+- **Pages**: Contains the page object classes for the application being tested.
+- **Locators**: Contains locators for elements on the pages.
+- **Tests**: Contains the actual test cases for the automation project.
+- **Config**: Stores configuration settings such as URLs and credentials.
+- **Utils**: Contains utility functions for common tasks in the tests.
+
+2.  `__init__.py` Explanation
+
+The `__init__.py` files are present in each directory (e.g., **Pages**, **Locators**, **Tests**, **Utils**, **Config**) to mark these directories as Python packages. This allows the files within these directories to be imported as modules. Without these files, Python would not recognize these directories as packages, and imports would fail.
+
+You don't need to add anything inside these `__init__.py` files unless you want to include specific initializations. Their main purpose is to enable proper imports across your project structure.
+
+3.  Running Tests
+
+To run the tests, you can use the following command from the project root:
+
+```bash
+python -m unittest tests.test_login
